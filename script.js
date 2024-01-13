@@ -34,4 +34,17 @@ $('.screenshots-carousel').owlCarousel({
             items:4
         }
     }
-})
+});
+
+
+const hamburgerBtn = document.querySelector(".hamburger-btn");
+const mobileMenu = document.querySelector(".mobile-navigation");
+const closeBtn = document.querySelector(".close-btn");
+
+hamburgerBtn.addEventListener("click", function(){
+    mobileMenu.style.width = "50%";
+});
+
+closeBtn.addEventListener("click", function(){
+    mobileMenu.style.width = "0px";
+});
