@@ -14,3 +14,24 @@ a:hover{
 ul{
     list-style: none;
 }
+
+
+.accordion-item{
+    padding-block: 20px;
+    border: 0;
+    border-bottom: 1px solid gray;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed), .accordion-button:not(.collapsed) h4 {
+    color: var(--primary-color);
+    background-color: white;
+    box-shadow: none;
+    outline: none;
+}
